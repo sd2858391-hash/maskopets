@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maskopets | Gimnasios y Camas para Mascotas</title>
+    <style>
+        :root {
+            --primary-color: #4a7c59;
+            --secondary-color: #d4a373;
+            --dark-color: #2b2d42;
+            --light-color: #fefae0;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: #f4f1de;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        #inicio {
+            background: linear-gradient(rgba(74, 124, 89, 0.62), rgba(74, 124, 89, 0.62)), url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1600&q=85');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        #inicio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #inicio p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        #inicio a {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        #inicio a:hover {
+            background-color: #c6925e;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: var(--dark-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 1.5rem;
+        }
+
+        article {
+            border: 1px solid #e0e0e0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        article h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+        }
+
+        footer h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 1.5rem 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maskopets</h1>
+        <p>Expertos en la comodidad de tus mascotas</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#gatos">Gimnasios para Gatos</a></li>
+                <li><a href="#perros">Camas para Perros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>El confort y la diversión que tu mascota merece</h2>
+            <p>Descubre nuestro catálogo de gimnasios para gatos y camas para perros de todos los tamaños y las mejores marcas.</p>
+            <a href="catalogo_gimnasios_y_camas_maskopets.pdf" target="_blank" rel="noopener">Ver Catálogo</a>
+        </section>
+
+        <section>
+            <h2>Nuestros Productos Destacados</h2>
+            <div class="productos-grid">
+                <article id="gatos">
+                    <h3>Gimnasios para Gatos</h3>
+                    <p>Estructuras multinivel, rascadores resistentes y áreas de descanso.</p>
+                    <ul>
+                        <li>Diversas alturas y materiales.</li>
+                        <li>Diseños estables y seguros.</li>
+                        <li>Las mejores marcas del mercado.</li>
+                    </ul>
+                </article>
+
+                <article id="perros">
+                    <h3>Camas para Perros</h3>
+                    <p>El descanso ideal para consentir a tu perro.</p>
+                    <ul>
+                        <li>Desde talla S hasta XXL.</li>
+                        <li>Modelos tipo nido y más.</li>
+                        <li>Variedad de marcas y texturas lavables.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>¿Por qué elegir Maskopets?</h2>
+            <p>Nos dedicamos a seleccionar productos duraderos que garantizan la felicidad de tus compañeros peludos, asegurando calidad en cada tamaño y marca.</p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <h3>Contacto</h3>
+        <p>¿Tienes dudas sobre las medidas o marcas disponibles? Escríbenos.</p>
+        <ul>
+            <li>Email: contacto@maskopets.com</li>
+            <li>Teléfono: +57 304 4251099</li>
+            <li>Redes Sociales: @Maskopets</li>
+        </ul>
+        <p><small>&copy; 2026 Maskopets. Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>
